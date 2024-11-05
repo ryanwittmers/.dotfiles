@@ -34,6 +34,7 @@
           "arc"
           "notion"
           "notion-calendar"
+          "superhuman"
         ];
 
         masApps = {
@@ -41,7 +42,11 @@
         };
 
         onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.autoUpgrade = true;
       };
+
+
 
       services.nix-daemon.enable = true;
 
@@ -73,17 +78,38 @@
           ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
         done
         '';
+
+        # Default macOS Settings
+        system.defaults = {
+            dock.autohide = true;
+            dock.persistent-apps = [
+                "${pkgs.vscode}/Applications/Visual Studio Code.app"
+                "/Applications/Arc.app"
+                "/Applications/Notion.app"
+                "/Applications/Notion Calendar.app"
+                "/Applications/Superhuman.app"
+                "/Applications/Spotify.app"
+            ];
+
+            finder.FXPreferredViewStyle = "clmv";
+            loginwindow.GuestEnabled = false;
+            NSGlobalDomain.AppleInterfaceStyle = "Dark";
+            NSGlobalDomain.KeyRepeat = 2;
+        };
     };
   in
   {
     darwinConfigurations."workMac" = nix-darwin.lib.darwinSystem {
       modules = [
-        configuration 
+        configuration
         nix-homebrew.darwinModules.nix-homebrew
         {
           nix-homebrew = {
             # Enable Homebrew via Nix
             enable = true;
+
+            # Enables Rosetta
+            enableRosetta = true;
 
             # User owning the Homebrew prefix
             user = "ryan.wittmers";
