@@ -26,6 +26,7 @@
         enable = true;
         brews = [
           "mas"
+          "oh-my-posh"
         ];
         casks = [
           "raycast"
@@ -35,7 +36,7 @@
           "notion"
           "notion-calendar"
           "superhuman"
-          "macdown"
+          "spotify"
         ];
 
         masApps = {
@@ -44,7 +45,6 @@
 
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
-        onActivation.autoUpgrade = true;
       };
 
 
@@ -84,12 +84,13 @@
         system.defaults = {
             dock.autohide = true;
             dock.persistent-apps = [
-                "${pkgs.vscode}/Applications/Visual Studio Code.app"
                 "/Applications/Arc.app"
                 "/Applications/Notion.app"
                 "/Applications/Notion Calendar.app"
                 "/Applications/Superhuman.app"
                 "/Applications/Spotify.app"
+                "${pkgs.vscode}/Applications/Visual Studio Code.app"
+                "/Applications/Warp.app"
             ];
 
             finder.FXPreferredViewStyle = "clmv";
