@@ -35,6 +35,7 @@
           "notion"
           "notion-calendar"
           "superhuman"
+          "macdown"
         ];
 
         masApps = {
