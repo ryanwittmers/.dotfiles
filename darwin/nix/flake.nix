@@ -37,6 +37,7 @@
           "notion-calendar"
           "superhuman"
           "spotify"
+          "slack"
         ];
 
         masApps = {
@@ -84,6 +85,7 @@
         system.defaults = {
             dock.autohide = true;
             dock.persistent-apps = [
+                "/Applications/iMessage.app"
                 "/Applications/Arc.app"
                 "/Applications/Notion.app"
                 "/Applications/Notion Calendar.app"
@@ -91,6 +93,8 @@
                 "/Applications/Spotify.app"
                 "${pkgs.vscode}/Applications/Visual Studio Code.app"
                 "/Applications/Warp.app"
+                "/Applications/Slack.app"
+
             ];
 
             finder.FXPreferredViewStyle = "clmv";
