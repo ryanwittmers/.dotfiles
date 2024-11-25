@@ -26,7 +26,7 @@
         enable = true;
         brews = [
           "oh-my-posh"
-	  	  "gh"
+	  	    "gh"
         ];
         casks = [
           "raycast"
@@ -38,7 +38,8 @@
           "superhuman"
           "spotify"
           "slack"
-	  	  "1password"
+	  	    "1password"
+          "orbstack" 
         ];
 
         masApps = {
