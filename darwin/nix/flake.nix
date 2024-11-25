@@ -25,8 +25,8 @@
       homebrew = {
         enable = true;
         brews = [
-          "mas"
           "oh-my-posh"
+	  	  "gh"
         ];
         casks = [
           "raycast"
@@ -38,10 +38,12 @@
           "superhuman"
           "spotify"
           "slack"
+	  	  "1password"
         ];
 
         masApps = {
           "Windows App" = 1295203466;
+          "Xcode" = 497799835;
         };
 
         onActivation.cleanup = "zap";
@@ -85,7 +87,7 @@
         system.defaults = {
             dock.autohide = true;
             dock.persistent-apps = [
-                "/Applications/iMessage.app"
+                "/System/Applications/Messages.app"
                 "/Applications/Arc.app"
                 "/Applications/Notion.app"
                 "/Applications/Notion Calendar.app"
