@@ -38,8 +38,10 @@
           "superhuman"
           "spotify"
           "slack"
-	  	    "1password"
-          "orbstack" 
+	  	  "1password"
+          "orbstack"
+          "shottr"
+          "maccy" 
         ];
 
         masApps = {
