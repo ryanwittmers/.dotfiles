@@ -26,7 +26,8 @@
         enable = true;
         brews = [
           "oh-my-posh"
-	  	    "gh"
+	  	  "gh"
+	  	  "java"
         ];
         casks = [
           "raycast"
