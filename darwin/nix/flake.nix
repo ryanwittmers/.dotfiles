@@ -17,17 +17,17 @@
         pkgs.neovim
         pkgs.mkalias
         pkgs.micro
-        pkgs.vscode
         pkgs.docker
         pkgs.raycast
+        pkgs.cocoapods
       ];
 
       homebrew = {
         enable = true;
         brews = [
           "oh-my-posh"
-	  	  "gh"
-	  	  "java"
+          "java"
+          "gh"
         ];
         casks = [
           "raycast"
@@ -43,7 +43,8 @@
           "orbstack"
           "shottr"
           "maccy"
-          "zoom" 
+          "zoom"
+          "cursor" 
         ];
 
         masApps = {
@@ -98,7 +99,7 @@
                 "/Applications/Notion Calendar.app"
                 "/Applications/Superhuman.app"
                 "/Applications/Spotify.app"
-                "${pkgs.vscode}/Applications/Visual Studio Code.app"
+                "/Applications/Cursor.app"
                 "/Applications/Warp.app"
                 "/Applications/Slack.app"
 
