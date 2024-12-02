@@ -39,7 +39,7 @@
           "superhuman"
           "spotify"
           "slack"
-	  	  "1password"
+          "1password"
           "orbstack"
           "shottr"
           "maccy"
