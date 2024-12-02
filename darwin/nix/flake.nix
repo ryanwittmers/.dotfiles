@@ -42,7 +42,8 @@
 	  	  "1password"
           "orbstack"
           "shottr"
-          "maccy" 
+          "maccy"
+          "zoom" 
         ];
 
         masApps = {
