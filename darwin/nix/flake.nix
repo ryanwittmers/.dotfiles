@@ -1,5 +1,5 @@
 {
-  description = "Zenful Darwin system flake";
+  description = "Work macOS System Configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -28,6 +28,7 @@
           "oh-my-posh"
           "java"
           "gh"
+          "mas"
         ];
         casks = [
           "raycast"
@@ -50,6 +51,10 @@
         masApps = {
           "Windows App" = 1295203466;
           "Xcode" = 497799835;
+          "Microsoft Word" = 462054704;
+          "Microsoft Excel" = 462058435;
+          "Microsoft PowerPoint" = 462062816;
+          "Microsoft OneDrive" = 823766827;
         };
 
         onActivation.cleanup = "zap";
