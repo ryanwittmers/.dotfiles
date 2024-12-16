@@ -28,7 +28,7 @@
           "oh-my-posh"
           "java"
           "gh"
-          "mas"
+          "pandoc"
         ];
         casks = [
           "raycast"
@@ -41,11 +41,12 @@
           "spotify"
           "slack"
           "1password"
+          "1password-cli"
           "orbstack"
           "shottr"
           "maccy"
           "zoom"
-          "cursor" 
+          "visual-studio-code" 
         ];
 
         masApps = {
@@ -104,9 +105,10 @@
                 "/Applications/Notion Calendar.app"
                 "/Applications/Superhuman.app"
                 "/Applications/Spotify.app"
-                "/Applications/Cursor.app"
+                "/Applications/.app"
                 "/Applications/Warp.app"
                 "/Applications/Slack.app"
+                "/Applications/Visual Studio Code.app"
 
             ];
 
@@ -134,7 +136,7 @@
             user = "ryan.wittmers";
 
             # Automigrate Homebrew packages to Nix. Now that homebrew is migrated successfully, this option doesn't need to be in there.
-            # autoMigrate = true;
+            autoMigrate = true;
           };
         }
       ];
